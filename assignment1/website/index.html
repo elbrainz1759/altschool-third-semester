@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudLaunch - Your Digital Platform Solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>CloudLaunch</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#documents" class="nav-link">Documents</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to CloudLaunch</h1>
+                <p class="hero-subtitle">Your comprehensive digital platform solution for modern businesses</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="showSection('features')">Explore Features</button>
+                    <button class="btn btn-secondary" onclick="showSection('documents')">Access Documents</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-graphic">
+                    <div class="cloud-icon">☁️</div>
+                    <div class="launch-icon">🚀</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About CloudLaunch</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Our Mission</h3>
+                    <p>CloudLaunch is designed to provide businesses with a lightweight, efficient platform that combines professional web presence with secure document management capabilities.</p>
+                    
+                    <h3>Why Choose Us?</h3>
+                    <ul class="feature-list">
+                        <li>Lightweight and fast performance</li>
+                        <li>Secure document storage</li>
+                        <li>User-friendly interface</li>
+                        <li>Responsive design</li>
+                        <li>Cost-effective solution</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>500+</h4>
+                        <p>Documents Managed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>99.9%</h4>
+                        <p>Uptime Guarantee</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>24/7</h4>
+                        <p>Support Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title">Platform Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Professional Website</h3>
+                    <p>Clean, modern company website with responsive design and professional aesthetics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>Document Storage</h3>
+                    <p>Secure private document storage with easy upload, organization, and retrieval capabilities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Access</h3>
+                    <p>Protected document area with authentication to keep your sensitive files safe.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Responsive</h3>
+                    <p>Optimized for all devices - desktop, tablet, and mobile for access anywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightweight</h3>
+                    <p>Fast loading times with minimal resource usage for optimal performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Easy to Use</h3>
+                    <p>Intuitive interface designed for users of all technical skill levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong> info@cloudlaunch.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> +1 (555) 123-4567
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong> 123 Cloud Street, Tech City, TC 12345
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="section">
+        <div class="container">
+            <!-- Login Form -->
+            <div id="login-form" class="login-container">
+                <div class="login-card">
+                    <h2>Access Private Documents</h2>
+                    <p>Please enter your credentials to access the document storage area.</p>
+                    <form id="auth-form">
+                        <input type="text" id="username" placeholder="Username" required>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                    <p class="login-hint">Demo credentials: admin / password</p>
+                </div>
+            </div>
+
+            <!-- Document Management Area -->
+            <div id="document-area" class="document-container" style="display: none;">
+                <div class="document-header">
+                    <h2>Document Management</h2>
+                    <div class="document-actions">
+                        <input type="file" id="file-upload" multiple style="display: none;">
+                        <button class="btn btn-primary" onclick="document.getElementById('file-upload').click()">
+                            Upload Files
+                        </button>
+                        <button class="btn btn-secondary" onclick="logout()">Logout</button>
+                    </div>
+                </div>
+
+                <div class="document-search">
+                    <input type="text" id="search-input" placeholder="Search documents...">
+                </div>
+
+                <div class="document-grid" id="document-grid">
+                    <!-- Sample documents -->
+                    <div class="document-card" data-name="quarterly-report.pdf">
+                        <div class="document-icon">📄</div>
+                        <div class="document-info">
+                            <h4>Quarterly Report</h4>
+                            <p>quarterly-report.pdf</p>
+                            <small>Uploaded: 2025-01-02</small>
+                        </div>
+                        <div class="document-actions-mini">
+                            <button class="btn-icon" title="Download">⬇️</button>
+                            <button class="btn-icon" title="Delete">🗑️</button>
+                        </div>
+                    </div>
+                    
+                    <div class="document-card" data-name="meeting-notes.docx">
+                        <div class="document-icon">📝</div>
+                        <div class="document-info">
+                            <h4>Meeting Notes</h4>
+                            <p>meeting-notes.docx</p>
+                            <small>Uploaded: 2025-01-01</small>
+                        </div>
+                        <div class="document-actions-mini">
+                            <button class="btn-icon" title="Download">⬇️</button>
+                            <button class="btn-icon" title="Delete">🗑️</button>
+                        </div>
+                    </div>
+
+                    <div class="document-card" data-name="project-proposal.pptx">
+                        <div class="document-icon">📊</div>
+                        <div class="document-info">
+                            <h4>Project Proposal</h4>
+                            <p>project-proposal.pptx</p>
+                            <small>Uploaded: 2024-12-30</small>
+                        </div>
+                        <div class="document-actions-mini">
+                            <button class="btn-icon" title="Download">⬇️</button>
+                            <button class="btn-icon" title="Delete">🗑️</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

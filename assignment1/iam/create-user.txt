@@ -1,0 +1,18 @@
+# Create user
+aws iam create-user --user-name cloudlaunch-user
+
+# Create login profile with temporary password (enforce password reset)
+aws iam create-login-profile \
+  --user-name cloudlaunch-user \
+  --password "TempP@ssw0rd123!" \
+  --password-reset-required
+
+# Create policy
+aws iam create-policy \
+  --policy-name CloudLaunch-VPC-Readonly \
+  --policy-document file://cloudlaunch-vpc-readonly-policy.json
+
+# Attach policy to user
+aws iam attach-user-policy \
+  --user-name cloudlaunch-user \
+  --policy-arn arn:aws:iam::YOUR_ACCOUNT_ID:policy/CloudLaunch-VPC-Readonly
