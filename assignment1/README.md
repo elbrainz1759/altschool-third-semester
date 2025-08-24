@@ -85,6 +85,13 @@ I created **three S3 buckets**:
   ]
 }
 ```
+IAM User Access:
+ - Install AWS CLI on your local machine.
+ - Run AWS Configure.
+ - Input your AWS secret and access key
+
+That is it! You now have access to the AWS CLI for the cloudlaunch-user. You will be able to access resources based on the permissions given.
+
 **Screenshots:**
 - ![IAM Accessing S3 Bucket Via CLI](images/iam_cli.png)  
 ---
