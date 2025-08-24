@@ -85,7 +85,8 @@ I created **three S3 buckets**:
   ]
 }
 ```
-
+**Screenshots:**
+- ![IAM Accessing S3 Bucket Via CLI](images/iam_cli.png)  
 ---
 
 **S3 Website Link:**  
